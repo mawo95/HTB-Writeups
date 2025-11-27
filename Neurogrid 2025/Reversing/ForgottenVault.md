@@ -82,7 +82,8 @@ _exit(0)
 noreturn   int32_t check_pin(int32_t arg1)
 int32_t result = (divs.dp.q(arg1 + 0x154f641, arg1 - 0x4149 + arg1 + 0xac979988 + 1)).d
 calculated = result
-return result```
+return result
+```
 
 # Reading the 88-byte block from the binary
 
