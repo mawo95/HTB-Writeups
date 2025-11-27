@@ -2,14 +2,17 @@
 Patch the exploit.py which exploits parameters because they arent validated
 
 **Solution**
-Replace ```_eval()``` with ```function parseQuantity(input) {
+Replace ```_eval()``` with 
+```
+function parseQuantity(input) {
   const n = Number(input);
   if (!Number.isFinite(n) || n < 0) return NaN;
   return n;
 }
 ```
 
-Update ```function buildCartComputation(cart) {
+Update 
+```function buildCartComputation(cart) {
   const ids = Object.keys(cart).map(Number).filter(Number.isFinite);
   const items = getItemsByIds(ids).sort((a, b) => a.id - b.id);
 
