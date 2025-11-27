@@ -7,7 +7,8 @@ Patch the insecure param validation which allows to claim admin role
             'email'    => $_REQUEST['email'],
             'password' => Hash::make($_REQUEST['password']),
             'role'     => $_REQUEST['role'] ?? 'user',
-        ]);```
+        ]);
+```
 
 Replace it with this secure version:
 ```
