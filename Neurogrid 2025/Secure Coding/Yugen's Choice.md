@@ -10,6 +10,7 @@ def _unpickle(b64_data: str) -> Any:
 ```
 ```
 pickly.loads
-``` executes the command in shell!
+```
+executes the command in shell!
 **Solution**
 Full replacement of pickle via normal base64  decoding
