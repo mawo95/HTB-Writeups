@@ -24,7 +24,8 @@ echo DEBUG: skipping self-relaunch
 
 # Flag
 
-We get this output: ```
+We get this output: 
+```
 $anaba = Join-Path $env:USERPROFILE 'aoc.bat'
 $uri    = 'http://malhq.htb/HTB{34dsy_d30bfusc4t10n_34sy_d3t3ct10n}'
 ```
