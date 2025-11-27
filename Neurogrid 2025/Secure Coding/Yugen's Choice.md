@@ -9,7 +9,7 @@ def _unpickle(b64_data: str) -> Any:
     return pickle.loads(decoded)
 ```
 ```
-pickly.loads
+pickle.loads
 ```
 executes the command in shell!
 **Solution**
